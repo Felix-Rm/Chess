@@ -220,7 +220,7 @@ class Game {
             this.construct(data.left, data.right, data.board)
             this.check_checkmate(true)
             this.check_checkmate(false)
-          } catch {
+          } catch(err) {
             console.log("loding not possible");
             this.moves++;
             this.back()
